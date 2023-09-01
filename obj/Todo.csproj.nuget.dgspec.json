@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matheus.s.vaz\\Todo\\Todo.csproj": {}
+    "C:\\Users\\matheus.s.vaz\\OneDrive - Corporativo\\Área de Trabalho\\Estudos\\CURSO BALTA.IO\\03 Asp.NET BLAZOR\\Fundamentos do ASP.NET 6\\Todo\\Todo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matheus.s.vaz\\Todo\\Todo.csproj": {
+    "C:\\Users\\matheus.s.vaz\\OneDrive - Corporativo\\Área de Trabalho\\Estudos\\CURSO BALTA.IO\\03 Asp.NET BLAZOR\\Fundamentos do ASP.NET 6\\Todo\\Todo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matheus.s.vaz\\Todo\\Todo.csproj",
+        "projectUniqueName": "C:\\Users\\matheus.s.vaz\\OneDrive - Corporativo\\Área de Trabalho\\Estudos\\CURSO BALTA.IO\\03 Asp.NET BLAZOR\\Fundamentos do ASP.NET 6\\Todo\\Todo.csproj",
         "projectName": "Todo",
-        "projectPath": "C:\\Users\\matheus.s.vaz\\Todo\\Todo.csproj",
+        "projectPath": "C:\\Users\\matheus.s.vaz\\OneDrive - Corporativo\\Área de Trabalho\\Estudos\\CURSO BALTA.IO\\03 Asp.NET BLAZOR\\Fundamentos do ASP.NET 6\\Todo\\Todo.csproj",
         "packagesPath": "C:\\Users\\matheus.s.vaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matheus.s.vaz\\Todo\\obj\\",
+        "outputPath": "C:\\Users\\matheus.s.vaz\\OneDrive - Corporativo\\Área de Trabalho\\Estudos\\CURSO BALTA.IO\\03 Asp.NET BLAZOR\\Fundamentos do ASP.NET 6\\Todo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -44,6 +44,18 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
