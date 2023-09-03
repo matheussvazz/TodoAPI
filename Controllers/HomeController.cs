@@ -10,7 +10,8 @@ namespace Todo.Controllers
         [HttpGet("/")]
         public IActionResult Get([FromServices] AppDbContext context)
             => Ok(context.Todos.ToList());
-
+         
+         //Retorna um registro
         [HttpGet("/{id:int}")]
         public IActionResult GetById(
             [FromRoute] int id,
@@ -22,7 +23,8 @@ namespace Todo.Controllers
 
             return Ok(todos);
         }
-
+        
+        //Cria um registro
         [HttpPost("/")]
         public IActionResult Post(
             [FromBody] TodoModel todo,
@@ -33,7 +35,8 @@ namespace Todo.Controllers
 
             return Created($"/{todo.Id}", todo);
         }
-
+        
+        //Atualiza um registro
         [HttpPut("/{id:int}")]
         public IActionResult Put(
             [FromRoute] int id,
@@ -51,7 +54,8 @@ namespace Todo.Controllers
             context.SaveChanges();
             return Ok(model);
         }
-
+        
+        // Deleta um registro
         [HttpDelete("/{id:int}")]
         public IActionResult Delete(
             [FromRoute] int id,
@@ -64,7 +68,7 @@ namespace Todo.Controllers
             context.Todos.Remove(model);
             context.SaveChanges();
 
-            return Ok(model);
+            return (model);
         }
     }
 }
